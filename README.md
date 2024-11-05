@@ -1,1 +1,1 @@
-# This is a website for fun and to help explain the feild of AI to non-technical Individuals
+# This is a website for fun and to help explain the field of AI to non-technical Individuals
