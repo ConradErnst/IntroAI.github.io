@@ -36,6 +36,20 @@ h2 a:hover {
     color: #0056b3;
 }
 
+h3 {
+    color: #007BFF;
+}
+
+h3 a {
+    text-decoration: none;
+    color: #007BFF;
+    transition: color 0.3s;
+}
+
+h3 a:hover {
+    color: #0056b3;
+}
+
 ul {
     list-style-type: none;
     padding-left: 0;
