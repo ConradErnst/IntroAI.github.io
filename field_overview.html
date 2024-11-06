@@ -50,7 +50,10 @@
 
         <!-- Links to resources -->
         <ul>
-            <li><a href="https://www.geeksforgeeks.org/expert-systems/" target="_blank">Deep Dive into Expert Systems </a></li>
+            <li>The following is one of the better sources for a <a href="https://www.geeksforgeeks.org/expert-systems/" target="_blank">Deep Dive into Expert Systems. </a></li>
+            <br>
+            <li>Despite its age, this paper offers valuable insights. <a href="https://www.jstor.org/stable/249711?casa_token=oUiEARS7oNUAAAAA%3ALuwBe9RhUWtzVy5pHtraYHvgtJQd3PDrbm0owaoBsh5qbebiGjjCZ2ap_URO2w5HAGlQ7LqJLJG3Iz_2SxbbKuoJx4s64L_pj0b7zPZ6FL2nQBavDQ&seq=3" target="_blank"></a></li>
+            <br>
             <div class="resources-section">   
                 <div class="resource-item">
                     <iframe width="100%" height="200" src="https://www.youtube.com/embed/eAleROueNpY" title="Expert Systems: A Forgotten Area of AI"></iframe>
@@ -65,9 +68,9 @@
                     <a href="https://www.youtube.com/watch?v=gazWTg1yUak" target="_blank"> Skip to 2:45 mark</a>
                 </div>
             </div>
-            <li><a href="https://github.com/jakevdp/PythonDataScienceHandbook" target="_blank">GitHub: Machine Learning Notebooks</a></li>
         </ul>
         
+        <!--
         <h2 id="ml-basics">1.3 Machine Learning (ML)</h2>
         <p>
             Terms like Artificial Intelligence (AI), Machine Learning (ML), and Deep Learning (DL) are often used interchangeably, 
@@ -78,32 +81,116 @@
         </p>
         <br>
         <p>
-            Overview: Provide a foundational understanding of machine learning as an optimization problem, introducing key terms and dispelling common misconceptions about AI, ML, and related areas.
-                Types of Learning Paradigms
-                
+            The simplest way to categorize machine learning is by its approach to learning from data, also known as the learning paradigm. 
+            I will keep most of this short, sweet, and resource plentiful. 
         </p>
+        <img src="Images/learning_paradigm.jpg" alt="Learning Paradigms">
 
+        <h3 >1.3.1 Supervised Learning</h3>
+        <p>
+            Supervised Learning is simply feeding a dataset into an algorithm, 
+            calculating the difference between the predicted output and the actual output, 
+            then updating the algorithms internal numerical weights as to improve prediction. 
         
-        <!-- Links to resources -->
-        <ul>
-            <li><a href="https://www.youtube.com/watch?v=GwIo3gDZCVQ" target="_blank">YouTube: What is Machine Learning?</a></li>
-            <li><a href="https://www.cs.cmu.edu/~tom/mlbook-chapter1.pdf" target="_blank">Academic Paper: An Overview of Machine Learning</a></li>
-            <li><a href="https://github.com/jakevdp/PythonDataScienceHandbook" target="_blank">GitHub: Machine Learning Notebooks</a></li>
-            <li><a href="https://scikit-learn.org/stable/" target="_blank">Website: Scikit-Learn Documentation</a></li>
-        </ul>
+        <li><a href="https://www.youtube.com/watch?v=GwIo3gDZCVQ" target="_blank">YouTube: What is Machine Learning?</a></li>
 
-        <h3 id="svm">1.3.1 Supervised Learning</h3>
-        <p>Description: Focus on labeled data and the process of mapping inputs to outputs using training examples.
-            Common Algorithms:
-            Linear Regression: Ideal for continuous output prediction.
+        <p>
+            There are various supervised learning algorithms depending on if the input data is continuous or discrete, 
+            depends on if you classification or regression. 
+
+        </p>
+        <h4> 1.3.1.1 Naive Bayes </h4>
+        <h4> 1.3.1.2 Support Vector Machines (SVM)</h4>
+        <h4> Decision Trees</h4>
+        <h4> Nearest Neighbor</h4>
+        <h5> Artifical Neural Networks</h5>
+        -->
+        <h2 id="ml-basics">1.3 Machine Learning (ML)</h2> 
+        <p> 
+            When people hear terms like Artificial Intelligence (AI), 
+            Machine Learning (ML), and Deep Learning (DL), 
+            it’s easy to think of them as interchangeable. 
+            But while they all belong to the same family, each term has its own nuances. 
+            In its simplest form, Machine Learning is the art of solving optimization problems. 
+            Think of it as teaching a machine to improve its predictions by adjusting internal settings based on data. 
+            By spotting patterns, making predictions, and supporting decisions, ML algorithms can change the way we approach 
+            everything from daily tasks to groundbreaking scientific research. But just like any tool, some methods shine in 
+            specific scenarios while others have their limitations. Below, I’ll break down the basics of ML and introduce you 
+            to key techniques that power the world around us. 
+        </p> 
+        <p> 
+            The best way to understand Machine Learning is by 
+                looking at its learning process, also known as the *learning paradigm*. While the concept may seem abstract,
+                 I’ll keep it simple and give you plenty of resources to dive deeper. 
+        </p> 
+        <img src="Images/learning_paradigm.jpg" alt="Learning Paradigms"> 
+        <h3>1.3.1 Supervised Learning</h3> 
+        <p> 
+            Imagine you're teaching a student how to answer math problems. 
+            You give them a set of problems (input) and the correct answers (output). 
+            Over time, they learn how to map new problems to the correct answers. 
+            This is what *Supervised Learning* does—an algorithm learns from labeled data (like those correct answers)
+             and then makes predictions based on that learning. 
+        </p> 
+        <p> 
+            The algorithm starts by comparing its predictions
+                 with the actual results, measuring the difference (error). It then adjusts its internal settings to improve 
+                 its predictions, a process called "training." The more data you feed it, the better it gets. You’ll see this
+                  in action in countless applications, from spam detection in emails to recommending products on websites. 
+        </p>
+        <ul> 
+            <li><a href="https://www.youtube.com/watch?v=GwIo3gDZCVQ" target="_blank">YouTube: What is Machine Learning?</a></li> 
+        </ul> 
+        <p> 
+            Supervised learning can be split into two broad categories: *classification* (where the output is a category, 
+            like "spam" or "not spam") and *regression* (where the output is a continuous value, like predicting house prices).
+             Based on the problem, there are various algorithms designed for different tasks. Here are a few you’ll encounter: 
+        </p> 
+        <h4>1.3.1.1 Naive Bayes</h4> 
+        <p> 
+            Naive Bayes is a simple but powerful algorithm for classification tasks. It’s based on the assumption that
+             features (like words in an email) are independent of each other, which makes it a “naive” approach. Despite
+              its simplicity, it works well for many problems, including spam filtering. 
+        </p> 
+        <h4>1.3.1.2 Support Vector Machines (SVM)</h4> 
+        <p> 
+                SVMs are like boundary setters. They aim to find the optimal boundary (or hyperplane) that best separates
+                 data into categories. The "support vector" refers to the data points that are closest to this boundary
+                  and help define it. SVMs are particularly powerful for complex classification tasks. 
+        </p> 
+        <h4>1.3.1.3 Decision Trees</h4> 
+        <p> 
+            Decision Trees are like flowcharts that help make decisions by splitting data into smaller subsets 
+            based on features. At each node, the data is divided by the feature that results in the best classification. 
+            They’re easy to understand and interpret, making them a popular choice for both small and large datasets. 
+        </p> 
+        <h4>1.3.1.4 Nearest Neighbor</h4> 
+        <p> 
+            The *k-Nearest Neighbor* algorithm is like asking your closest friends for advice. 
+            To make a prediction, it looks at the "k" closest data points in the dataset and classifies based on
+             the majority of those neighbors. It’s simple, intuitive, and works well for many problems, but can be 
+             computationally expensive with large datasets. 
+        </p>
+        <h5>Artificial Neural Networks (ANN)</h5> 
+        <p> 
+            Artificial Neural Networks are the backbone of Deep Learning. 
+            These networks are inspired by the human brain, with layers of "neurons" that process information.
+             They excel at recognizing patterns in large datasets, from images to natural language, and form the
+              foundation for many cutting-edge technologies like facial recognition and language translation. 
+        </p>
+        <!--
+        Linear Regression: Ideal for continuous output prediction.
             Decision Trees: For categorical or regression tasks.
             Support Vector Machines (SVMs): Explained with examples and applications.</p>
-        <ul>
+            Naive Bayes
+            Nearest Neighbor
+            Neural Networks
+
             <li><a href="https://www.youtube.com/watch?v=GwIo3gDZCVQ" target="_blank">YouTube: What is Machine Learning?</a></li>
             <li><a href="https://www.cs.cmu.edu/~tom/mlbook-chapter1.pdf" target="_blank">Academic Paper: An Overview of Machine Learning</a></li>
             <li><a href="https://github.com/jakevdp/PythonDataScienceHandbook" target="_blank">GitHub: Machine Learning Notebooks</a></li>
             <li><a href="https://scikit-learn.org/stable/" target="_blank">Website: Scikit-Learn Documentation</a></li>
-        </ul>
+        -->
         <h3>1.3.2 Unsupervised Learning</h3>
         <p>Description: Explore learning from unlabeled data to uncover hidden patterns.
             Key Techniques:
@@ -128,14 +215,7 @@
             <li><a href="https://github.com/jakevdp/PythonDataScienceHandbook" target="_blank">GitHub: Machine Learning Notebooks</a></li>
             <li><a href="https://scikit-learn.org/stable/" target="_blank">Website: Scikit-Learn Documentation</a></li>
         </ul>
-        <h4>1.3.4 </h4>
-        <ul>
-            <li><a href="https://www.youtube.com/watch?v=GwIo3gDZCVQ" target="_blank">YouTube: What is Machine Learning?</a></li>
-            <li><a href="https://www.cs.cmu.edu/~tom/mlbook-chapter1.pdf" target="_blank">Academic Paper: An Overview of Machine Learning</a></li>
-            <li><a href="https://github.com/jakevdp/PythonDataScienceHandbook" target="_blank">GitHub: Machine Learning Notebooks</a></li>
-            <li><a href="https://scikit-learn.org/stable/" target="_blank">Website: Scikit-Learn Documentation</a></li>
-        </ul>
-
+        
         <h2 id="dl-essentials">1.4 Deep Learning (DL)</h2>
         <p>Explore the concepts of deep learning, neural networks, and applications like image and speech recognition.</p>
         
@@ -148,6 +228,7 @@
         </ul>
 
         <h2 id="application-areas">1.5 Subdomains / Application Areas</h2>
+        <p> Now that we know <b>what</b></p>
         <p>Learn about AI applications in various fields such as healthcare, finance, robotics, and autonomous systems.</p>
         
         <!-- Links to resources -->
