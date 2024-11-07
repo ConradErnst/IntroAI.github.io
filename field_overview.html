@@ -458,13 +458,14 @@
             making RL particularly useful in scenarios like robotics, game playing, autonomous driving and lately for training LLMs. 
         </p>
         <br>
+        <div class="resource-container-large">
+            <img src="Images/RL.jpeg" alt="Supervised Learning diagram" width="100%" height="400">
+        </div>
         <div class="resource-container">
             <iframe width="100%" height="200" src="https://www.youtube.com/embed/i7q8bISGwMQ" title="Reinforcement Learning Methods"></iframe>
             <a href="https://www.youtube.com/watch?v=i7q8bISGwMQ" target="_blank">Reinforcement Learning Methods</a>
         </div>
-        <div class="resource-container">
-            <img src="Images/RL.jpeg" alt="Supervised Learning diagram" width="100%" height="200">
-        </div>
+        
         <br>
         <p>
             To start, let's first cover some of the basic components of RL. Markov Decision Processes (MDPs) form the mathematical foundation of RL. 
@@ -492,6 +493,41 @@
             Common algorithms like REINFORCE, PPO (Proximal Policy Optimization), and Actor-Critic methods iteratively adjust the policy to maximize expected rewards. 
             These techniques are effective in complex environments where learning a model of the environment is infeasible.
         </p>
+        <br>
+        <p>One of the better explanations of <a href="https://www.youtube.com/watch?v=cQfOQcpYRzE" target="_blank">Policy Optimization</a> I have seen.</p>
+        
+        <ul>
+            <div class="resources-section">
+                <div class="resource-item">
+                    <iframe width="100%" height="200" src="https://medium.com/@danushidk507/ppo-algorithm-3b33195de14a" title="PPO Algorithm"></iframe>
+                    <a href="https://medium.com/@danushidk507/ppo-algorithm-3b33195de14a" target="_blank">PPO Algorithm</a>
+                </div>
+                <div class="resource-item">
+                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/HrapVFNBN64" title="Proximal Policy Optimization Explained"></iframe>
+                    <a href="https://www.youtube.com/watch?v=HrapVFNBN64" target="_blank">Proximal Policy Optimization (PPO) Explained</a>
+                </div>
+                <div class="resource-item">
+                    <iframe width="100%" height="200" src="https://arxiv.org/abs/1707.06347" title="PPO"></iframe>
+                    <a href="https://arxiv.org/abs/1707.06347" target="_blank">PPO Paper</a>
+                </div>
+            </div>
+        </ul>
+        <ul>
+            <div class="resources-section">
+                <div class="resource-item">
+                    <iframe width="100%" height="200" src="https://theaisummer.com/Actor_critics/" title="Actor-Critic"></iframe>
+                    <a href="https://theaisummer.com/Actor_critics/" target="_blank">Actor-Critic</a>
+                </div>
+                <div class="resource-item">
+                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/WGlMlS_Yydk" title="A2C"></iframe>
+                    <a href="https://www.youtube.com/watch?v=w_3mmm0P0j8" target="_blank">Actor-Critic Algorithms</a>
+                </div>
+                <li><a href="https://paperswithcode.com/method/a2c" target="_blank">A2C</a></li>
+                <li><a href="https://paperswithcode.com/method/a3c" target="_blank">A3C</a></li>
+                
+            </div>
+        </ul>
+        
 
         <br>
         <h4>(Model Free) Gradient Free</h4>
@@ -499,16 +535,33 @@
             *Gradient-Free* methods, like evolutionary strategies and genetic algorithms, search for optimal policies without using gradient information. 
             These methods are often used in RL when gradient-based optimization is challenging, such as in high-dimensional or non-differentiable environments.
         </p>
+        <ul>
+            <div class="resources-section">
+                <div class="resource-item">
+                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/0iqz4tcKN58" title="Q-Learning"></iframe>
+                    <a href="https://www.youtube.com/watch?v=0iqz4tcKN58" target="_blank">Great Intro into Q-Learning</a>
+                </div>
+                <div class="resource-item">
+                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/WGlMlS_Yydk" title="Apriori Algorithm"></iframe>
+                    <a href="https://www.youtube.com/watch?v=WGlMlS_Yydk" target="_blank">Apriori Algorithm</a>
+                </div>
+                <div class="resource-item">
+                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/icGS26TS1fE&t=209s" title="Data Mining Application"></iframe>
+                    <a href="https://www.youtube.com/watch?v=icGS26TS1fE&t=209s" target="_blank">Data Mining Application</a>
+                </div>
+            </div>
+        </ul>
+        
 
         <br>
-        <4>(Model Based) Learning the Model </4>
+        <h4>(Model Based) Learning the Model </h4>
         <p>
             In *Model-Based* RL, the agent learns a model of the environment's dynamics and uses it to plan actions. 
             Algorithms like Dyna-Q integrate planning and learning by updating the model and generating simulated experiences, helping the agent to achieve faster convergence.
         </p>
 
         <br>
-        <4>(Model Based) Given the Model</4>
+        <h4>(Model Based) Given the Model</h4>
         <p>
             When the *Model* is already provided or accurately approximated, planning algorithms like Value Iteration and Policy Iteration can be applied. 
             These techniques use the model to compute an optimal policy without additional interaction, making them valuable in structured environments like simulations.
