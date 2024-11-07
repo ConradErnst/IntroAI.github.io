@@ -17,51 +17,44 @@ body {
     padding: 20px;
 }
 
+/* Header Styles */
 h1 {
     text-align: center;
     color: #007BFF;
+    font-size: 2.5em;
+    margin-bottom: 20px;
 }
 
 h2 {
     color: #007BFF;
+    font-size: 1.8em;
+    margin: 20px 0 10px;
 }
 
-h2 a {
+h2 a, h3 a, h4 a {
     text-decoration: none;
-    color: #007BFF;
-    transition: color 0.3s;
+    color: inherit;
+    transition: color 0.3s, text-shadow 0.3s;
 }
 
-h2 a:hover {
+h2 a:hover, h3 a:hover, h4 a:hover {
     color: #0056b3;
+    text-shadow: 1px 1px 5px rgba(0, 91, 255, 0.2);
 }
 
-h3 {
-    color: #007BFF;
+/* Section and Card Styles */
+.section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-h3 a {
-    text-decoration: none;
-    color: #007BFF;
-    transition: color 0.3s;
-}
-
-h3 a:hover {
-    color: #0056b3;
-}
-
-h4 {
-    color: #007BFF;
-}
-
-h4 a {
-    text-decoration: none;
-    color: #007BFF;
-    transition: color 0.3s;
-}
-
-h4 a:hover {
-    color: #0056b3;
+.section:hover {
+    transform: scale(1.01);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
 ul {
@@ -71,63 +64,29 @@ ul {
 
 ul li {
     margin: 10px 0;
+    font-size: 1.1em;
 }
 
-.section {
-    margin: 20px 0;
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.back-link {
-    margin-bottom: 20px;
-    display: block;
-    font-size: 16px;
-    color: #007BFF;
-}
-
-.footer {
-    text-align: center;
-    margin-top: 40px;
-    padding: 10px;
-    background-color: #007BFF;
-    color: white;
-    border-radius: 8px;
-}
-
-.content {
-    max-width: 800px;
-    margin: auto;
-}
-
+/* Resource and Card Grid */
 .resources-section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 15px;
     margin-top: 10px;
 }
-.resource-container {
-    text-align: center;
+
+.resource-container, .resource-container-large {
     padding: 20px;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
     background-color: #fff;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    width: 40%;
-    margin: 20px auto;
+    transition: transform 0.3s ease;
 }
 
-.resource-container-large {
-    text-align: center;
-    padding: 20px;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    background-color: #fff;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    width: 60%;
-    margin: 20px auto;
+.resource-container:hover, .resource-container-large:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .resource-item {
@@ -144,16 +103,39 @@ ul li {
     transform: scale(1.05);
 }
 
+/* Thumbnails and Links */
 .thumbnail {
     max-width: 100%;
     border-radius: 8px;
     margin-bottom: 10px;
 }
 
-.resource-item a {
-    text-decoration: none;
+.resource-item a, .resource-container a {
     color: #1e90ff;
     font-weight: 500;
+    text-decoration: none;
+}
+
+.resource-item a:hover, .resource-container a:hover {
+    color: #0056b3;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 8px;
+}
+
+/* Additional Effects */
+.back-link {
+    margin-bottom: 20px;
+    display: block;
+    font-size: 16px;
+    color: #007BFF;
 }
 
 iframe {
@@ -161,15 +143,26 @@ iframe {
     border-radius: 8px;
 }
 
-
-.resource-container a {
-    display: block;
-    margin-top: 10px;
-    color: #1e90ff;
-    font-weight: 500;
+/* Hover Underline Animation for Links */
+a {
+    position: relative;
     text-decoration: none;
 }
 
-.resource-container a:hover {
-    color: #0056b3;
+a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #007BFF;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover::after {
+    visibility: visible;
+    transform: scaleX(1);
 }
