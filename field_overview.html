@@ -94,11 +94,7 @@
             The algorithm makes predictions, calculates the error between its predicted output and the actual output, 
             and then adjusts its internal parameters (weights) to minimize this error over time, improving its predictions.
         </p>
-        <br>
-        <div class="resource-container">
-            <iframe width="100%" height="200" src="https://www.youtube.com/embed/BT6Aw6Q75Yg" title="Learning Algorithms"></iframe>
-            <a href="https://www.youtube.com/watch?v=BT6Aw6Q75Yg" target="_blank">Simple Explanation</a>
-        </div>
+        
         <br>
         <h4>Decision Trees</h4>
         <ul>
@@ -316,8 +312,7 @@
                     <iframe width="100%" height="200" src="https://www.youtube.com/embed/12Xq9OLdQwQ" title="Longer Video, great content"></iframe>
                     <a href="https://www.youtube.com/watch?v=12Xq9OLdQwQ" target="_blank">Longer Video, great content</a>
                 </div>
-            </div>
-            <div class="resources-section">
+            
                 <div class="resource-item">
                     <iframe width="100%" height="200" src="https://www.youtube.com/embed/mhSFyXbCaPM" title="Anomaly detection 101"></iframe>
                     <a href="https://www.youtube.com/watch?v=mhSFyXbCaPM" target="_blank">Anomaly detection 101</a>
@@ -339,35 +334,107 @@
                     <iframe width="100%" height="200" src="https://medium.com/@ainsupriyofficial/what-is-association-rule-learning-a6ef399fdc01" title="What is Association Rule Learning"></iframe>
                     <a href="https://medium.com/@ainsupriyofficial/what-is-association-rule-learning-a6ef399fdc01" target="_blank">What is Association Rule Learning</a>
                 </div>
-            </div>
-            <div class="resources-section">
                 <div class="resource-item">
                     <iframe width="100%" height="200" src="https://www.youtube.com/embed/WGlMlS_Yydk" title="Apriori Algorithm"></iframe>
                     <a href="https://www.youtube.com/watch?v=WGlMlS_Yydk" target="_blank">Apriori Algorithm</a>
                 </div>
-            </div>
-            <div class="resources-section">
                 <div class="resource-item">
                     <iframe width="100%" height="200" src="https://www.youtube.com/embed/icGS26TS1fE&t=209s" title="Data Mining Application"></iframe>
                     <a href="https://www.youtube.com/watch?v=icGS26TS1fE&t=209s" target="_blank">Data Mining Application</a>
                 </div>
             </div>
-            
         </ul>
         <br>
-
-
-
-
-
-
-
 
 
 
         <br>
         <h3>1.3.3 Semi-Supervised Learning</h3>
         <!--https://www.youtube.com/watch?v=irPD9_irRVg-->
+        
+        <p>
+            Semi-supervised learning is a technique where an algorithm is trained on a dataset that contains a small amount of labeled data 
+            and a larger amount of unlabeled data. This approach combines elements of supervised and unsupervised learning, 
+            leveraging the labeled data to guide the model in making predictions while learning from the structure within the unlabeled data.
+        </p>
+        <br>
+        <h4>Generative Models</h4>
+        <p>
+            Generative models in semi-supervised learning, like Variational Autoencoders (VAEs) or Generative Adversarial Networks (GANs), 
+            learn a representation of the data distribution. These models use both labeled and unlabeled data to improve 
+            the generation and classification of data, useful for scenarios with limited labeled data.
+        </p>
+        <ul>
+            <li><a href="https://towardsdatascience.com/semi-supervised-learning-with-variational-autoencoders-a01c3f902429" target="_blank">VAE-based Semi-Supervised Learning</a></li>
+            <div class="resources-section">
+                <div class="resource-item">
+                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/FWfLOyMEQLw" title="Generative Models in Semi-Supervised Learning"></iframe>
+                    <a href="https://www.youtube.com/watch?v=FWfLOyMEQLw" target="_blank">Introduction to Semi-Supervised VAEs</a>
+                </div>
+            </div>
+        </ul>
+        <div class="resource-container">
+            <iframe width="100%" height="200" src="https://www.youtube.com/embed/d3U0_vxTzrA" title="Semi-Supervised Learning Overview"></iframe>
+            <a href="https://www.youtube.com/watch?v=d3U0_vxTzrA" target="_blank">Introduction to Semi-Supervised Learning</a>
+        </div>
+        <br>
+
+        <h4>Graph-Based Methods</h4>
+        <p>
+            Graph-based methods utilize the structure within data points, representing them as nodes in a graph 
+            and using edges to indicate similarity. These methods spread labels through the graph, leveraging 
+            connections between labeled and unlabeled data to make predictions.
+        </p>
+        <ul>
+            <li><a href="https://www.researchgate.net/publication/224171419_Graph-Based_Semi-Supervised_Learning" target="_blank">Graph-Based Learning Research</a></li>
+            <div class="resources-section">
+                <div class="resource-item">
+                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/4oTCDj3MZzI" title="Graph-Based Semi-Supervised Learning"></iframe>
+                    <a href="https://www.youtube.com/watch?v=4oTCDj3MZzI" target="_blank">Graph-Based Methods Overview</a>
+                </div>
+            </div>
+        </ul>
+        <br>
+
+        <h4>Self-Training</h4>
+        <p>
+            Self-training is a semi-supervised technique where a model is initially trained on the labeled data. It then makes predictions on 
+            the unlabeled data and retrains using these confident predictions. This iterative process uses the model’s own predictions 
+            to gradually expand the labeled dataset.
+        </p>
+        <ul>
+            <li><a href="https://www.datacamp.com/community/tutorials/self-training-semi-supervised-learning" target="_blank">In-depth Overview</a></li>
+            <div class="resources-section">
+                <div class="resource-item">
+                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/2OnFGyJadGM" title="Self-Training Example"></iframe>
+                    <a href="https://www.youtube.com/watch?v=2OnFGyJadGM" target="_blank">Self-Training in Action</a>
+                </div>
+            </div>
+        </ul>
+        <br>
+
+        <h4>Co-Training</h4>
+        <p>
+            Co-training is a method where two or more models are trained simultaneously on different subsets of features 
+            from the labeled data. Each model makes predictions on the unlabeled data, and the confident predictions 
+            are shared and added to the labeled data for further training, enhancing performance.
+        </p>
+        <ul>
+            <li><a href="https://ai.stanford.edu/~ang/papers/acl98-co-training.pdf" target="_blank">Original Co-Training Paper</a></li>
+            <div class="resources-section">
+                <div class="resource-item">
+                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/WQehaoh3tD8" title="Understanding Co-Training"></iframe>
+                    <a href="https://www.youtube.com/watch?v=WQehaoh3tD8" target="_blank">Co-Training Explained</a>
+                </div>
+            </div>
+        </ul>
+        <br>
+
+
+        
+
+        
+        
         <br>
         <h3>1.3.4 Reinforcement Learning (RL)</h3>
         <p>
@@ -376,6 +443,12 @@
                 Examples: Break down popular RL algorithms like Q-Learning and Deep Q Networks (DQN), with links to resources on applications in gaming and robotics.
 
         </p>
+        <div class="resource-container-large">
+            <img src="Images/RL.jpeg" alt="Supervised Learning diagram" width="100%" height="400">
+        </div>
+
+
+
         <ul>
             <li><a href="https://www.youtube.com/watch?v=GwIo3gDZCVQ" target="_blank">YouTube: What is Machine Learning?</a></li>
             <li><a href="https://www.cs.cmu.edu/~tom/mlbook-chapter1.pdf" target="_blank">Academic Paper: An Overview of Machine Learning</a></li>
