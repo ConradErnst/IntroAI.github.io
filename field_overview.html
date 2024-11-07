@@ -219,30 +219,130 @@
             </div>
         </ul>
         
-
-       
-        
-        
-        <!--
-            <li><a href="https://www.youtube.com/watch?v=GwIo3gDZCVQ" target="_blank">YouTube: What is Machine Learning?</a></li>
-            <li><a href="https://www.cs.cmu.edu/~tom/mlbook-chapter1.pdf" target="_blank">Academic Paper: An Overview of Machine Learning</a></li>
-            <li><a href="https://github.com/jakevdp/PythonDataScienceHandbook" target="_blank">GitHub: Machine Learning Notebooks</a></li>
-            <li><a href="https://scikit-learn.org/stable/" target="_blank">Website: Scikit-Learn Documentation</a></li>
-        -->
         <br>
         <h3>1.3.2 Unsupervised Learning</h3>
-        <p>Description: Explore learning from unlabeled data to uncover hidden patterns.
-            Key Techniques:
-            Clustering (e.g., K-Means, Hierarchical): Discuss grouping methods and use cases.
-            Dimensionality Reduction (e.g., PCA): Explain methods for simplifying data while retaining key information.</p>
+        <p>
+            Unsupervised learning involves training an algorithm on a dataset without labeled outputs. 
+            The model tries to learn the underlying patterns or structure in the data, 
+            which is particularly useful for tasks like clustering, anomaly detection, and dimensionality reduction.
+        </p>
+        <br>
+        <div class="resource-container">
+            <iframe width="100%" height="200" src="https://www.youtube.com/embed/xyz12345" title="Unsupervised Learning"></iframe>
+            <a href="https://www.youtube.com/watch?v=xyz12345" target="_blank">Introduction to Unsupervised Learning</a>
+        </div>
+        <br>
+
+        <h4>k-Means Clustering</h4>
+        <p>
+            The *k-Means Clustering* algorithm groups data points into clusters based on their similarities. 
+            It works by partitioning the dataset into "k" clusters, assigning each data point to the cluster with the nearest centroid. 
+            This method is commonly used for customer segmentation and image compression.
+        </p>
         <ul>
-            <li><a href="https://www.youtube.com/watch?v=GwIo3gDZCVQ" target="_blank">YouTube: What is Machine Learning?</a></li>
-            <li><a href="https://www.cs.cmu.edu/~tom/mlbook-chapter1.pdf" target="_blank">Academic Paper: An Overview of Machine Learning</a></li>
-            <li><a href="https://github.com/jakevdp/PythonDataScienceHandbook" target="_blank">GitHub: Machine Learning Notebooks</a></li>
-            <li><a href="https://scikit-learn.org/stable/" target="_blank">Website: Scikit-Learn Documentation</a></li>
+            <li><a href="https://www.datacamp.com/community/tutorials/k-means-clustering-python" target="_blank">Deep Dive into k-Means</a></li>
+
+            <div class="resources-section">
+                <div class="resource-item">
+                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/4b5d3muPQmA" title="k-Means Overview"></iframe>
+                    <a href="https://www.youtube.com/watch?v=4b5d3muPQmA" target="_blank">k-Means Explained</a>
+                </div>
+                <div class="resource-item">
+                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/AiDLFAw7v6k" title="Applications of k-Means"></iframe>
+                    <a href="https://www.youtube.com/watch?v=AiDLFAw7v6k" target="_blank">Applications of k-Means</a>
+                </div>
+            </div>
         </ul>
+        <br>
+
+        <h4>Hierarchical Clustering</h4>
+        <p>
+            *Hierarchical Clustering* builds a hierarchy of clusters, which can be visualized using a tree-like diagram called a dendrogram. 
+            It’s useful when the number of clusters is unknown and provides insight into how clusters relate at various levels. 
+            This approach is often applied in social network analysis and gene expression data.
+        </p>
+        <ul>
+            <li><a href="https://www.ibm.com/topics/hierarchical-clustering" target="_blank">Overview and Use Cases</a></li>
+
+            <div class="resources-section">
+                <div class="resource-item">
+                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/JUnpbrW4hI8" title="Hierarchical Clustering"></iframe>
+                    <a href="https://www.youtube.com/watch?v=JUnpbrW4hI8" target="_blank">Hierarchical Clustering Explained</a>
+                </div>
+            </div>
+        </ul>
+        <br>
+
+        <h4>Principal Component Analysis (PCA)</h4>
+        <p>
+            *Principal Component Analysis (PCA)* is a dimensionality reduction technique that transforms data into a lower-dimensional space 
+            while preserving as much information as possible. It’s commonly used for reducing features in high-dimensional data for visualization or to improve model performance.
+        </p>
+        <ul>
+            <li><a href="https://towardsdatascience.com/an-introduction-to-principal-component-analysis-pca-5fdf4bb28b6d" target="_blank">Introduction to PCA</a></li>
+
+            <div class="resources-section">
+                <div class="resource-item">
+                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/FgakZw6K1QQ" title="PCA Explained"></iframe>
+                    <a href="https://www.youtube.com/watch?v=FgakZw6K1QQ" target="_blank">PCA for Beginners</a>
+                </div>
+                <div class="resource-item">
+                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/2FLakbR7A5Y" title="Dimensionality Reduction"></iframe>
+                    <a href="https://www.youtube.com/watch?v=2FLakbR7A5Y" target="_blank">PCA in Dimensionality Reduction</a>
+                </div>
+            </div>
+        </ul>
+        <br>
+
+        <h4>Anomaly Detection</h4>
+        <p>
+            *Anomaly Detection* algorithms identify unusual patterns or data points that deviate from the norm. 
+            These techniques are valuable in identifying fraud, defects, or faults in various domains, 
+            especially when anomalies occur infrequently.
+        </p>
+        <ul>
+            <li><a href="https://www.kdnuggets.com/anomaly-detection" target="_blank">Anomaly Detection Overview</a></li>
+
+            <div class="resources-section">
+                <div class="resource-item">
+                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/gGztdm_KUy0" title="Anomaly Detection Methods"></iframe>
+                    <a href="https://www.youtube.com/watch?v=gGztdm_KUy0" target="_blank">Methods for Anomaly Detection</a>
+                </div>
+            </div>
+        </ul>
+        <br>
+
+        <h4>Association Rule Learning</h4>
+        <p>
+            *Association Rule Learning* is used to discover interesting relationships or patterns within data, typically in transactional datasets. 
+            The Apriori and Eclat algorithms are two popular methods that help identify associations between items in large datasets, 
+            often applied in market basket analysis.
+        </p>
+        <ul>
+            <li><a href="https://www.analyticsvidhya.com/blog/2016/04/complete-tutorial-association-rule-learning/" target="_blank">Complete Tutorial on Association Rules</a></li>
+
+            <div class="resources-section">
+                <div class="resource-item">
+                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/Yx_7m-lhN0g" title="Association Rule Learning"></iframe>
+                    <a href="https://www.youtube.com/watch?v=Yx_7m-lhN0g" target="_blank">Explained with Market Basket Analysis</a>
+                </div>
+            </div>
+        </ul>
+        <br>
+
+
+
+
+
+
+
+
+
+
+        <br>
         <h3>1.3.3 Semi-Supervised Learning</h3>
         <!--https://www.youtube.com/watch?v=irPD9_irRVg-->
+        <br>
         <h3>1.3.4 Reinforcement Learning (RL)</h3>
         <p>
             Overview: Define RL as a paradigm where agents learn to make sequences of decisions by receiving feedback from the environment.
@@ -256,7 +356,7 @@
             <li><a href="https://github.com/jakevdp/PythonDataScienceHandbook" target="_blank">GitHub: Machine Learning Notebooks</a></li>
             <li><a href="https://scikit-learn.org/stable/" target="_blank">Website: Scikit-Learn Documentation</a></li>
         </ul>
-        
+        <br>
         <h2 id="dl-essentials">1.4 Deep Learning (DL)</h2>
         <p>Explore the concepts of deep learning, neural networks, and applications like image and speech recognition.</p>
         
@@ -267,17 +367,16 @@
             <li><a href="https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/images/intro_to_cnns.ipynb" target="_blank">Jupyter Notebook: Intro to Convolutional Neural Networks</a></li>
             <li><a href="https://keras.io/" target="_blank">Website: Keras Documentation</a></li>
         </ul>
-
-        <h2 id="application-areas">1.5 Subdomains / Application Areas</h2>
-        <p> Now that we know <b>what</b></p>
-        <p>Learn about AI applications in various fields such as healthcare, finance, robotics, and autonomous systems.</p>
+        <br>
+        <h2 id="subdomains">Subdomains</h2>
+        <p>Explore the concepts of deep learning, neural networks, and applications like image and speech recognition.</p>
         
         <!-- Links to resources -->
         <ul>
-            <li><a href="https://www.youtube.com/watch?v=PeVrqYEGZf8" target="_blank">YouTube: AI Applications in Healthcare</a></li>
-            <li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6991452/" target="_blank">Academic Paper: AI in Medical Imaging</a></li>
-            <li><a href="https://colab.research.google.com/drive/1J4jJfgvRi1jKKuR9YvDJR1kg8RtSTgza" target="_blank">Jupyter Notebook: Financial Data Analysis with AI</a></li>
-            <li><a href="https://deepmind.com/research" target="_blank">Website: DeepMind Research Areas</a></li>
+            <li><a href="https://www.youtube.com/watch?v=aircAruvnKk" target="_blank">YouTube: Deep Learning Explained</a></li>
+            <li><a href="https://arxiv.org/abs/1409.4842" target="_blank">Academic Paper: A Guide to Deep Learning</a></li>
+            <li><a href="https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/images/intro_to_cnns.ipynb" target="_blank">Jupyter Notebook: Intro to Convolutional Neural Networks</a></li>
+            <li><a href="https://keras.io/" target="_blank">Website: Keras Documentation</a></li>
         </ul>
     </div>
 </div>
