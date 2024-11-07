@@ -119,6 +119,17 @@ ul li {
     margin: 20px auto;
 }
 
+.resource-container-large {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    margin: 20px auto;
+}
+
 .resource-item {
     text-align: center;
     padding: 10px;
