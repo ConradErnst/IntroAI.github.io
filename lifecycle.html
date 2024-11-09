@@ -166,7 +166,7 @@
         <br>
         <div class="resource-container">
             <iframe width="100%" height="200" src="https://arxiv.org/pdf/1811.12808" title="Model Selection"></iframe>
-            <a href="https://arxiv.org/pdf/1811.12808" target="_blank">Data Splitting Explained</a>
+            <a href="https://arxiv.org/pdf/1811.12808" target="_blank">Model Selection</a>
         </div>
         <br>
 
@@ -179,9 +179,25 @@
         <p>
             Training also involves hyperparameter tuning, a crucial step where parameters such as learning rate, batch size, and the number of layers in a neural network 
             are optimized for better performance. Successful training results in a model that generalizes well to new data, not just the data it was trained on. For a deeper dive 
-            into model training, <a href="https://www.youtube.com/watch?v=fCUkvL0mbxI" target="_blank">this video</a> and 
-            <a href="https://developers.google.com/machine-learning/guides/text-classification/step-4" target="_blank">Google's text classification guide</a> provide comprehensive insights.
+            into model training, take a look at the following links. 
         </p>
+        <br>
+        <div class="resources-section">
+            <div class="resource-item">
+                <iframe width="100%" height="200" src="https://developers.google.com/machine-learning/guides/text-classification/step-4" title="google text"></iframe>
+                <a href="https://developers.google.com/machine-learning/guides/text-classification/step-4" target="_blank">Google's text classification guide</a>
+            </div>
+            <div class="resource-item">
+                <img src="https://img.youtube.com/vi/fCUkvL0mbxI/hqdefault.jpg" 
+                    data-iframe-src="https://www.youtube.com/watch?v=fCUkvL0mbxI" 
+                    alt="Data Processing" 
+                    class="lazy-iframe" 
+                    width="100%" height="200" 
+                    onclick="loadIframecontainer(this)">
+                <a href="https://www.youtube.com/watch?v=fCUkvL0mbxI" target="_blank">Training Overview</a>
+            </div> 
+        </div>
+           
         <br>
         <h3>2.2.3 Tools and Frameworks</h3>
         <p>
@@ -190,9 +206,9 @@
         <br>
         <h4>Frameworks</h4>
         <ul>
-            <li><strong>TensorFlow:</strong> Developed by Google, TensorFlow is an open-source framework that supports various ML tasks, from deep learning to statistical modeling. 
+            <li><strong><a href="https://www.tensorflow.org/" target="_blank">Tensorflow:</a></strong> Developed by Google, TensorFlow is an open-source framework that supports various ML tasks, from deep learning to statistical modeling. 
                 It provides flexibility and is widely used in industry for scalable model deployment.</li>
-            <li><strong>PyTorch:</strong> PyTorch, created by Facebook, is another popular deep learning library known for its ease of use and dynamic computation graph, 
+            <li><strong><a href="https://pytorch.org/" target="_blank">PyTorch:</a></strong> PyTorch, created by Facebook, is another popular deep learning library known for its ease of use and dynamic computation graph, 
                 making it ideal for research and experimentation. PyTorch is often favored for its intuitive syntax and strong community support.</li>
         </ul>
         <br>
@@ -200,9 +216,9 @@
         <ul>
             <li><strong><a href="https://aws.amazon.com/pm/sagemaker/?gclid=Cj0KCQiArby5BhCDARIsAIJvjIQe2yKLhiTAUetcvi-keVdGD9dGPFAG4kZDPRUuH6Yv4EmiDBvoiYcaAnA8EALw_wcB&trk=b6c2fafb-22b1-4a97-a2f7-7e4ab2c7aa28&sc_channel=ps&ef_id=Cj0KCQiArby5BhCDARIsAIJvjIQe2yKLhiTAUetcvi-keVdGD9dGPFAG4kZDPRUuH6Yv4EmiDBvoiYcaAnA8EALw_wcB:G:s&s_kwcid=AL!4422!3!651751060692!e!!g!!aws%20sagemaker!19852662230!145019225977" target="_blank">Amazon Web Services (AWS):</a></strong> AWS offers SageMaker, a fully managed platform that simplifies model training, deployment, and management. 
                 SageMaker supports various frameworks and automates much of the infrastructure management, making it suitable for scalable projects.</li>
-            <li><strong>Google Cloud Platform (GCP):</strong> Google Cloud’s AI platform provides tools for building, training, and deploying models, including integration with TensorFlow 
+            <li><strong><a href="https://cloud.google.com/gcp?utm_source=google&utm_medium=cpc&utm_campaign=na-US-all-en-dr-bkws-all-all-trial-e-dr-1707554&utm_content=text-ad-none-any-DEV_c-CRE_665735450627-ADGP_Hybrid+%7C+BKWS+-+EXA+%7C+Txt-Core-Google+Cloud-KWID_43700077223807301-kwd-26415313501&utm_term=KW_google+cloud+platform-ST_google+cloud+platform&gad_source=1&gclid=EAIaIQobChMI1bqFnq_QiQMVSlwPAh1r9TlIEAAYASAAEgJB9fD_BwE&gclsrc=aw.ds&hl=en" target="_blank">Google Cloud Platform (GCP):</a></strong> Google Cloud’s AI platform provides tools for building, training, and deploying models, including integration with TensorFlow 
                 and AutoML for automated model training and tuning, ideal for users looking to streamline workflow without extensive ML experience.</li>
-            <li><strong>Microsoft Azure:</strong> Azure ML offers tools for data science and machine learning on the cloud, allowing for seamless integration with other Azure services and 
+            <li><strong><a href="https://azure.microsoft.com/en-us" target="_blank">Microsoft Azure:</a></strong> Azure ML offers tools for data science and machine learning on the cloud, allowing for seamless integration with other Azure services and 
                 advanced capabilities like automated ML and DevOps for model lifecycle management.</li>
         </ul>
         <br>
@@ -211,19 +227,30 @@
             as projects evolve. Leveraging these resources helps ensure a more efficient, structured, and optimized model development process.
         </p>
 
-        <h3></h3>
-        <h2 id="model-evaluation">2.3 Model Evaluation</h2>
         <br>
+        <h2 id="model-evaluation">2.3 Model Evaluation</h2>
         <p>
             Model evaluation is a critical step in the machine learning workflow, allowing us to assess how well a trained model performs on unseen data. 
             By evaluating the model, we gain insights into its strengths and weaknesses, determine its real-world applicability, and identify any areas for improvement. 
             Model evaluation typically involves using various metrics to quantify the model’s predictive accuracy, robustness, and generalizability.
         </p>
-
+        <br>
         <h3>2.3.1 Evaluation Metrics</h3>
         <p>
             Choosing the right evaluation metric depends on the type of problem being solved (e.g., classification, regression) and the project goals. Common metrics include:
         </p>
+        <br>
+        
+        <div class="resource-item">
+            <img src="https://img.youtube.com/vi/LbX4X71-TFI/hqdefault.jpg" 
+                data-iframe-src="https://www.youtube.com/watch?v=LbX4X71-TFI" 
+                alt="Data Processing" 
+                class="lazy-iframe" 
+                width="100%" height="200" 
+                onclick="loadIframecontainer(this)">
+            <a href="https://www.youtube.com/watch?v=LbX4X71-TFI" target="_blank">Metrics</a>
+        </div> 
+        <br>
         <ul>
             <li><strong>Accuracy:</strong> For classification tasks, accuracy measures the percentage of correct predictions out of the total predictions. 
                 It is useful for balanced datasets but may be misleading for imbalanced datasets where one class is more frequent.</li>
@@ -243,42 +270,27 @@
             <strong>K-Fold Cross-Validation</strong>, where the data is split into "K" parts, is commonly used to ensure robust performance measurement and reduce the risk of overfitting.
         </p>
 
-        <h3>2.3.3 Confusion Matrix</h3>
-        <p>
-            The confusion matrix is a powerful tool for analyzing classification model performance. It visualizes true positives, true negatives, false positives, and false negatives, 
-            allowing us to understand the types of errors the model makes. This breakdown is especially helpful for imbalanced datasets, where accuracy alone may be misleading.
-        </p>
-
-        <h3>2.3.4 Tools for Evaluation</h3>
+        <h3>2.3.3 Tools for Evaluation</h3>
         <p>
             Several libraries and tools are available to simplify model evaluation:
         </p>
         <ul>
-            <li><strong>scikit-learn:</strong> A Python library that provides a variety of metrics, including accuracy, precision, recall, F1 score, and more. 
+            <li><strong><a href="https://scikit-learn.org/1.5/modules/model_evaluation.html" target="_blank">scikit-learn:</a></strong> A Python library that provides a variety of metrics, including accuracy, precision, recall, F1 score, and more. 
                 scikit-learn also supports cross-validation functions and plotting tools for ROC and precision-recall curves.</li>
-            <li><strong>TensorFlow Model Analysis:</strong> A framework that enables detailed evaluation of TensorFlow models, including metric computations and data slicing 
+            <li><strong><a href="https://www.tensorflow.org/tfx/model_analysis/install" target="_blank">TensorFlow Model Analysis:</a></strong> A framework that enables detailed evaluation of TensorFlow models, including metric computations and data slicing 
                 to identify specific issues in different data segments.</li>
-            <li><strong>MLflow:</strong> MLflow is an open-source platform for managing the machine learning lifecycle. It supports tracking experiments, 
+            <li><strong><a href="https://mlflow.org/" taget="_blank">MLflow:</a></strong> MLflow is an open-source platform for managing the machine learning lifecycle. It supports tracking experiments, 
                 visualizing metrics, and logging model versions, making it easier to monitor and compare model performance.</li>
         </ul>
-
-        <div class="resource-container-large">
-            <img src="Images/model_evaluation.jpeg" 
-                data-iframe-src="https://www.youtube.com/watch?v=85dtiMz9tSo" 
-                alt="Model Evaluation Explained" 
-                class="lazy-iframe" 
-                width="100%" height="400" 
-                onclick="loadIframecontainer(this)">
-            <a href="https://www.youtube.com/watch?v=85dtiMz9tSo" target="_blank">Introduction to Model Evaluation</a>
-        </div>
         <br>
 
         <p>
             Proper model evaluation helps ensure that the model not only performs well on training data but also generalizes effectively to new data. 
             By using the right metrics and tools, we can achieve a thorough understanding of the model's performance and make informed adjustments to improve its real-world impact.
         </p>
-        <h2 id="deployment">2.4 Deployment</h2>
         <br>
+        <h2 id="deployment">2.4 Deployment</h2>
+
         <p>
             Model deployment is the final step in the machine learning pipeline, where we move the trained and evaluated model into a production environment. 
             This step allows the model to interact with real-world data and users, providing actionable insights or predictions. Deployment includes selecting 
