@@ -57,15 +57,152 @@
         <br>
         <h2 id="data">2.1 Data</h2>
         <p>
-            Data is the foundation of any AI project. Before training a model, 
-            we must gather high-quality data relevant to the task, then clean and preprocess it to ensure consistency and accuracy. 
-            This often involves handling missing values, removing outliers, standardizing formats, and dividing the dataset into training, 
-            validation, and test sets. Proper data preparation is essential, as it directly impacts the model's performance and generalizability. 
-            Organizing the data in a structured way also helps streamline the training process, making it easier to evaluate, fine-tune, 
-            and optimize the model as new data becomes available. 
+            Data is the foundation of any AI project. Before training a model, we must gather high-quality data relevant to the task, then clean and preprocess it to ensure consistency and accuracy. 
+            This often involves handling missing values, removing outliers, standardizing formats, and dividing the dataset into training, validation, and test sets. 
+            Proper data preparation is essential, as it directly impacts the model's performance and generalizability. Organizing the data in a structured way also helps streamline 
+            the training process, making it easier to evaluate, fine-tune, and optimize the model as new data becomes available.
         </p>
+        <br>
+
+        <h3>2.1.1 Data Collection</h3>
+        <p>
+            The type, source, and amount of data required depends on the specific application. 
+        </p>
+        <h4>Personal Projects</h4>
+        <p>
+            For personal projects, open-source datasets are widely available from sources like <a href="https://huggingface.co/datasets" target="_blank">Hugging Face</a>, 
+            <a href="https://www.kaggle.com/datasets" target="_blank">Kaggle</a>, and <a href="https://registry.opendata.aws/" target="_blank">AWS Open Data Registry</a>. 
+            These platforms offer datasets covering a broad range of topics, allowing for diverse experimentation at little or no cost.
+        </p>
+        <h4>Industry</h4>
+        <p>
+            In industry, data collection involves larger-scale and often proprietary datasets, gathered from extensive sources including transactional systems, customer interactions, sensors, 
+            and third-party aggregators. Industry data collection is typically more rigorous, requiring robust data engineering pipelines to handle real-time, high-volume data, while ensuring data quality, privacy, and compliance with regulations.
+        </p>
+        <ul>
+            <div class="resources-section">
+                <div class="resource-item">
+                    <iframe width="100%" height="200" src="https://hbr.org/2019/02/companies-are-failing-in-their-efforts-to-become-data-driven" title="Failure to Become Data-Driven"></iframe>
+                    <a href="https://hbr.org/2019/02/companies-are-failing-in-their-efforts-to-become-data-driven" target="_blank">Failure to Become Data-Driven</a>
+                </div>
+                <div class="resource-item">
+                    <iframe width="100%" height="200" src="https://builtin.com/articles/ai-lawsuits-and-regulations" title="Data Collection Legality"></iframe>
+                    <a href="https://builtin.com/articles/ai-lawsuits-and-regulations" target="_blank">Data Collection Legality</a>
+                </div>
+                <div class="resource-item">
+                    <img src="https://img.youtube.com/vi/KqLh1WJNYiA/hqdefault.jpg"
+                        data-iframe-src="https://www.youtube.com/embed/KqLh1WJNYiA"
+                        alt="Data Collection"
+                        class="lazy-iframe" 
+                        width="100%" height="200" 
+                        onclick="loadIframe(this)"
+                    >
+                    <a href="https://www.youtube.com/watch?v=KqLh1WJNYiA" target="_blank">Data Collection</a>
+                </div>
+            </div>
+        </ul>
+        <br>
+        <h3>2.1.2 Data Cleaning/Preprocessing</h3>
+        <p>
+            Data cleaning is crucial across all types of projects. It involves removing or handling missing values, correcting data inconsistencies, standardizing formats, 
+            and removing irrelevant information. For example, text data may need language standardization and normalization, while numerical data may require outlier treatment 
+            to prevent skewed analysis and model bias.
+        </p>
+        <br>
+        <p>
+            Data processing prepares cleaned data to meet the input requirements of the model. This includes feature engineering, where new features may be created or existing ones 
+            transformed to enhance the model’s learning ability. Additionally, data is typically scaled, normalized, or tokenized as needed, depending on the model’s architecture.
+        </p>
+        <br>
+        <div class="resources-section">
+            <div class="resource-item">
+                <iframe width="100%" height="200" src="https://www.obviously.ai/post/data-cleaning-in-machine-learning" title="Best Practices"></iframe>
+                <a href="https://www.obviously.ai/post/data-cleaning-in-machine-learning" target="_blank">Best Practices</a>
+            </div>
+            <div class="resource-item">
+                <img src="https://img.youtube.com/vi/P8ERBy91Y90/hqdefault.jpg" 
+                    data-iframe-src="https://www.youtube.com/watch?v=P8ERBy91Y90" 
+                    alt="Data Processing" 
+                    class="lazy-iframe" 
+                    width="100%" height="200" 
+                    onclick="loadIframecontainer(this)">
+                <a href="https://www.youtube.com/watch?v=P8ERBy91Y90" target="_blank">Data Processing</a>
+            </div> 
+        </div>
+        <br>
+
+        <h3>2.1.3 Data Splitting</h3>
+        <p>
+            Dividing data into training, validation, and test sets is critical to evaluate and optimize model performance. The training set is used to fit the model, 
+            the validation set fine-tunes hyperparameters, and the test set provides an unbiased evaluation of the final model’s performance.
+        </p>
+        <br>
+        <div class="resource-container">
+            <iframe width="100%" height="200" src="https://medium.com/@datasciencewizards/a-guide-to-data-splitting-in-machine-learning-49a959c95fa1" title="Data Splitting Explained"></iframe>
+            <a href="https://medium.com/@datasciencewizards/a-guide-to-data-splitting-in-machine-learning-49a959c95fa1" target="_blank">Data Splitting Explained</a>
+        </div>
+        <br>
         <h2 id="model">2.2 Model Building & Training</h2>
         <br>
+        <p>
+            Model building and training are essential stages in machine learning projects, transforming prepared data into a functional model capable of making accurate predictions. 
+            During model building, we select the model type best suited for the task, while model training involves feeding data to this model to help it learn patterns and make decisions.
+        </p>
+
+        <h3>2.2.1 Model Selection</h3>
+        <p>
+            Model selection is the process of choosing the most appropriate algorithm or architecture based on the problem, data characteristics, and desired outcome. 
+            Selecting a model requires careful consideration of various factors, such as the complexity of the data, the type of problem (e.g., classification, regression, 
+            clustering), and the trade-offs between accuracy and interpretability. For example, deep neural networks often work well for complex image or language tasks, 
+            while simpler models like linear regression may be sufficient for straightforward, structured data.
+        </p>
+        <p>
+            It's also crucial to consider model bias, variance, and computational requirements. More complex models like ensemble methods or deep neural networks 
+            can achieve high accuracy but may require significant resources and longer training times. Reading <a href="https://arxiv.org/pdf/1811.12808" target="_blank">
+            this paper on model selection</a> provides further insights into these considerations and helps highlight best practices for picking suitable models in machine learning projects.
+        </p>
+
+        <h3>2.2.2 Model Training</h3>
+        <p>
+            Model training is the process where the selected algorithm learns from data by adjusting its internal parameters to minimize the difference between 
+            its predictions and actual values. This process often involves feeding labeled training data into the model, calculating the prediction error, and 
+            using an optimization technique (like gradient descent) to refine model weights and improve its predictions over successive iterations.
+        </p>
+        <p>
+            Training also involves hyperparameter tuning, a crucial step where parameters such as learning rate, batch size, and the number of layers in a neural network 
+            are optimized for better performance. Successful training results in a model that generalizes well to new data, not just the data it was trained on. For a deeper dive 
+            into model training, <a href="https://www.youtube.com/watch?v=fCUkvL0mbxI" target="_blank">this video</a> and 
+            <a href="https://developers.google.com/machine-learning/guides/text-classification/step-4" target="_blank">Google's text classification guide</a> provide comprehensive insights.
+        </p>
+
+        <h3>2.2.3 Tools and Frameworks</h3>
+        <p>
+            Several powerful tools and frameworks can assist with model building and training, streamlining the process and providing efficient workflows for different ML tasks.
+        </p>
+        <h4>Frameworks</h4>
+        <ul>
+            <li><strong>TensorFlow:</strong> Developed by Google, TensorFlow is an open-source framework that supports various ML tasks, from deep learning to statistical modeling. 
+                It provides flexibility and is widely used in industry for scalable model deployment.</li>
+            <li><strong>PyTorch:</strong> PyTorch, created by Facebook, is another popular deep learning library known for its ease of use and dynamic computation graph, 
+                making it ideal for research and experimentation. PyTorch is often favored for its intuitive syntax and strong community support.</li>
+        </ul>
+
+        <h4>Cloud Services</h4>
+        <ul>
+            <li><strong>Amazon Web Services (AWS):</strong> AWS offers SageMaker, a fully managed platform that simplifies model training, deployment, and management. 
+                SageMaker supports various frameworks and automates much of the infrastructure management, making it suitable for scalable projects.</li>
+            <li><strong>Google Cloud Platform (GCP):</strong> Google Cloud’s AI platform provides tools for building, training, and deploying models, including integration with TensorFlow 
+                and AutoML for automated model training and tuning, ideal for users looking to streamline workflow without extensive ML experience.</li>
+            <li><strong>Microsoft Azure:</strong> Azure ML offers tools for data science and machine learning on the cloud, allowing for seamless integration with other Azure services and 
+                advanced capabilities like automated ML and DevOps for model lifecycle management.</li>
+        </ul>
+        <br>
+        <p>
+            The right tools and frameworks not only simplify the model-building and training process but also provide robust support for scaling, monitoring, and fine-tuning models 
+            as projects evolve. Leveraging these resources helps ensure a more efficient, structured, and optimized model development process.
+        </p>
+
+        <h3></h3>
         <h2 id="model eval">2.3 Model Evaluation</h2>
 
         <h2 id="deployment">2.4 Deployment</h2>
