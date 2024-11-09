@@ -43,19 +43,19 @@
                     <a href="https://www.datacamp.com/blog/machine-learning-lifecycle-explained" target="_blank">Lifecycle Explained</a>
                 </div>
                 <div class="resource-item">
-                    <img src="https://img.youtube.com/vi/lH3IgyGlpzw/hqdefault.jpg"
-                        data-iframe-src="https://www.youtube.com/embed/lH3IgyGlpzw"
+                    <img src="https://img.youtube.com/vi/ZVWg18AXXuE?si=jTbFc9CmxZaTxGmX/hqdefault.jpg"
+                        data-iframe-src="https://www.youtube.com/embed/ZVWg18AXXuE?si=jTbFc9CmxZaTxGmX"
                         alt="Most of the time this process is called MLOps"
                         class="lazy-iframe" 
                         width="100%" height="200" 
                         onclick="loadIframe(this)"
                     >
-                    <a href="https://www.youtube.com/watch?v=lH3IgyGlpzw" target="_blank">Most of the time this process is called MLOps</a>
+                    <a href="https://youtu.be/ZVWg18AXXuE?si=4apChGW1pvmlqC7k" target="_blank">Most of the time this process is called MLOps</a>
                 </div>
             </div>
         </ul>
         <br>
-        <h2 id="data">2.1 Data</h2>
+        <h2 id="data-preparation">2.1 Data</h2>
         <p>
             Data is the foundation of any AI project. Before training a model, we must gather high-quality data relevant to the task, then clean and preprocess it to ensure consistency and accuracy. 
             This often involves handling missing values, removing outliers, standardizing formats, and dividing the dataset into training, validation, and test sets. 
@@ -68,12 +68,14 @@
         <p>
             The type, source, and amount of data required depends on the specific application. 
         </p>
+        <br>
         <h4>Personal Projects</h4>
         <p>
             For personal projects, open-source datasets are widely available from sources like <a href="https://huggingface.co/datasets" target="_blank">Hugging Face</a>, 
             <a href="https://www.kaggle.com/datasets" target="_blank">Kaggle</a>, and <a href="https://registry.opendata.aws/" target="_blank">AWS Open Data Registry</a>. 
             These platforms offer datasets covering a broad range of topics, allowing for diverse experimentation at little or no cost.
         </p>
+        <br>
         <h4>Industry</h4>
         <p>
             In industry, data collection involves larger-scale and often proprietary datasets, gathered from extensive sources including transactional systems, customer interactions, sensors, 
@@ -142,7 +144,7 @@
             <a href="https://medium.com/@datasciencewizards/a-guide-to-data-splitting-in-machine-learning-49a959c95fa1" target="_blank">Data Splitting Explained</a>
         </div>
         <br>
-        <h2 id="model">2.2 Model Building & Training</h2>
+        <h2 id="model-training">2.2 Model Building & Training</h2>
         <br>
         <p>
             Model building and training are essential stages in machine learning projects, transforming prepared data into a functional model capable of making accurate predictions. 
@@ -158,9 +160,15 @@
         </p>
         <p>
             It's also crucial to consider model bias, variance, and computational requirements. More complex models like ensemble methods or deep neural networks 
-            can achieve high accuracy but may require significant resources and longer training times. Reading <a href="https://arxiv.org/pdf/1811.12808" target="_blank">
-            this paper on model selection</a> provides further insights into these considerations and helps highlight best practices for picking suitable models in machine learning projects.
+            can achieve high accuracy but may require significant resources and longer training times. 
+            
         </p>
+        <br>
+        <div class="resource-container">
+            <iframe width="100%" height="200" src="https://arxiv.org/pdf/1811.12808" title="Model Selection"></iframe>
+            <a href="https://arxiv.org/pdf/1811.12808" target="_blank">Data Splitting Explained</a>
+        </div>
+        <br>
 
         <h3>2.2.2 Model Training</h3>
         <p>
@@ -174,11 +182,12 @@
             into model training, <a href="https://www.youtube.com/watch?v=fCUkvL0mbxI" target="_blank">this video</a> and 
             <a href="https://developers.google.com/machine-learning/guides/text-classification/step-4" target="_blank">Google's text classification guide</a> provide comprehensive insights.
         </p>
-
+        <br>
         <h3>2.2.3 Tools and Frameworks</h3>
         <p>
             Several powerful tools and frameworks can assist with model building and training, streamlining the process and providing efficient workflows for different ML tasks.
         </p>
+        <br>
         <h4>Frameworks</h4>
         <ul>
             <li><strong>TensorFlow:</strong> Developed by Google, TensorFlow is an open-source framework that supports various ML tasks, from deep learning to statistical modeling. 
@@ -186,10 +195,10 @@
             <li><strong>PyTorch:</strong> PyTorch, created by Facebook, is another popular deep learning library known for its ease of use and dynamic computation graph, 
                 making it ideal for research and experimentation. PyTorch is often favored for its intuitive syntax and strong community support.</li>
         </ul>
-
+        <br>
         <h4>Cloud Services</h4>
         <ul>
-            <li><strong>Amazon Web Services (AWS):</strong> AWS offers SageMaker, a fully managed platform that simplifies model training, deployment, and management. 
+            <li><strong><a href="https://aws.amazon.com/pm/sagemaker/?gclid=Cj0KCQiArby5BhCDARIsAIJvjIQe2yKLhiTAUetcvi-keVdGD9dGPFAG4kZDPRUuH6Yv4EmiDBvoiYcaAnA8EALw_wcB&trk=b6c2fafb-22b1-4a97-a2f7-7e4ab2c7aa28&sc_channel=ps&ef_id=Cj0KCQiArby5BhCDARIsAIJvjIQe2yKLhiTAUetcvi-keVdGD9dGPFAG4kZDPRUuH6Yv4EmiDBvoiYcaAnA8EALw_wcB:G:s&s_kwcid=AL!4422!3!651751060692!e!!g!!aws%20sagemaker!19852662230!145019225977" target="_blank">Amazon Web Services (AWS):</a></strong> AWS offers SageMaker, a fully managed platform that simplifies model training, deployment, and management. 
                 SageMaker supports various frameworks and automates much of the infrastructure management, making it suitable for scalable projects.</li>
             <li><strong>Google Cloud Platform (GCP):</strong> Google Cloud’s AI platform provides tools for building, training, and deploying models, including integration with TensorFlow 
                 and AutoML for automated model training and tuning, ideal for users looking to streamline workflow without extensive ML experience.</li>
@@ -203,7 +212,7 @@
         </p>
 
         <h3></h3>
-        <h2 id="model-eval">2.3 Model Evaluation</h2>
+        <h2 id="model-evaluation">2.3 Model Evaluation</h2>
         <br>
         <p>
             Model evaluation is a critical step in the machine learning workflow, allowing us to assess how well a trained model performs on unseen data. 
