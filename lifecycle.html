@@ -241,7 +241,7 @@
         </p>
         <br>
         
-        <div class="resource-item">
+        <div class="resource-container">
             <img src="https://img.youtube.com/vi/LbX4X71-TFI/hqdefault.jpg" 
                 data-iframe-src="https://www.youtube.com/watch?v=LbX4X71-TFI" 
                 alt="Data Processing" 
@@ -262,14 +262,14 @@
             <li><strong>Area Under the Curve (AUC) - Receiver Operating Characteristic (ROC):</strong> AUC-ROC is a common metric for binary classifiers, 
                 evaluating the trade-off between true positive and false positive rates. A higher AUC indicates better model performance.</li>
         </ul>
-
+        <br>
         <h3>2.3.2 Cross-Validation</h3>
         <p>
             Cross-validation is a technique for evaluating the generalizability of a model by dividing the data into multiple subsets or "folds." 
             The model is trained on some folds and validated on the remaining ones, rotating through each fold to ensure a thorough evaluation. 
             <strong>K-Fold Cross-Validation</strong>, where the data is split into "K" parts, is commonly used to ensure robust performance measurement and reduce the risk of overfitting.
         </p>
-
+        <br>
         <h3>2.3.3 Tools for Evaluation</h3>
         <p>
             Several libraries and tools are available to simplify model evaluation:
@@ -279,7 +279,7 @@
                 scikit-learn also supports cross-validation functions and plotting tools for ROC and precision-recall curves.</li>
             <li><strong><a href="https://www.tensorflow.org/tfx/model_analysis/install" target="_blank">TensorFlow Model Analysis:</a></strong> A framework that enables detailed evaluation of TensorFlow models, including metric computations and data slicing 
                 to identify specific issues in different data segments.</li>
-            <li><strong><a href="https://mlflow.org/" taget="_blank">MLflow:</a></strong> MLflow is an open-source platform for managing the machine learning lifecycle. It supports tracking experiments, 
+            <li><strong><a href="https://mlflow.org/" target="_blank">MLflow:</a></strong> MLflow is an open-source platform for managing the machine learning lifecycle. It supports tracking experiments, 
                 visualizing metrics, and logging model versions, making it easier to monitor and compare model performance.</li>
         </ul>
         <br>
@@ -296,7 +296,7 @@
             This step allows the model to interact with real-world data and users, providing actionable insights or predictions. Deployment includes selecting 
             the appropriate infrastructure, setting up APIs, and ensuring scalability, reliability, and ease of maintenance.
         </p>
-
+        <br>
         <h3>2.4.1 Deployment Strategies</h3>
         <p>
             The deployment approach often depends on the application requirements, the target environment (cloud, on-premises, or edge), and user access. Common strategies include:
@@ -309,10 +309,16 @@
             <li><strong>Edge Deployment:</strong> Edge deployment involves deploying models directly on devices (e.g., mobile phones, IoT devices) for low-latency inference. 
                 This approach is often used for applications with limited connectivity or latency constraints, like autonomous vehicles or wearable health monitors.</li>
         </ul>
-
+        <br>
+        <div class="resource-item">
+            <iframe width="100%" height="200" src="https://builtin.com/machine-learning/model-deployment" title="Strategies for Deployment"></iframe>
+            <a href="https://builtin.com/machine-learning/model-deployment" target="_blank">Strategies for Deployment</a>
+        </div>
+        <br>
         <h3>2.4.2 Infrastructure Options and Tools</h3>
         <p>
-            Multiple platforms and tools streamline the deployment of machine learning models, supporting cloud-based, on-premises, and hybrid deployments.
+            Multiple platforms and tools streamline the deployment of machine learning models, supporting cloud-based, on-premises, and hybrid deployments. 
+            Most of these were referenced earlier, but thought it would be good to cover again.
         </p>
 
         <h4>Cloud Services</h4>
@@ -337,23 +343,12 @@
 
         <h4>Containerization and Orchestration</h4>
         <ul>
-            <li><strong>Docker:</strong> Docker is a widely used tool for packaging models into containers, ensuring that they run consistently across different environments. 
+            <li><strong><a href="https://www.docker.com/" target="_blank">Docker:</a></strong> Docker is a widely used tool for packaging models into containers, ensuring that they run consistently across different environments. 
                 Docker enables easy deployment, scaling, and updating of models in production.</li>
-            <li><strong>Kubernetes:</strong> Kubernetes is an open-source platform for automating container deployment, scaling, and management. It’s especially useful for 
+            <li><strong><a href="https://kubernetes.io/" target="_blank">Kubernetes:</a></strong> Kubernetes is an open-source platform for automating container deployment, scaling, and management. It’s especially useful for 
                 managing large-scale deployments of models and can be integrated with cloud platforms for seamless scaling.</li>
         </ul>
-
-        <div class="resource-container-large">
-            <img src="Images/model_deployment.jpeg" 
-                data-iframe-src="https://www.youtube.com/watch?v=a2Wlk7ibXes" 
-                alt="Model Deployment Explained" 
-                class="lazy-iframe" 
-                width="100%" height="400" 
-                onclick="loadIframecontainer(this)">
-            <a href="https://www.youtube.com/watch?v=a2Wlk7ibXes" target="_blank">Introduction to Model Deployment</a>
-        </div>
         <br>
-
         <p>
             Deploying machine learning models requires balancing accuracy, latency, scalability, and infrastructure cost. The right tools and frameworks enable efficient deployment, 
             ensuring the model is accessible, reliable, and maintainable. By leveraging these options, organizations can streamline the deployment process and maximize the model’s impact.
@@ -366,6 +361,7 @@
             As real-world data changes, model performance can degrade due to concept drift, data quality issues, or changing user requirements. 
             Regular monitoring and maintenance help detect and address these issues, allowing for timely adjustments that maintain model accuracy and reliability.
         </p>
+        <br>
 
         <h3>2.5.1 Key Aspects of Model Monitoring</h3>
         <p>
@@ -382,7 +378,7 @@
             <li><strong>Latency and System Health:</strong> Monitoring the latency and system health, such as memory usage, CPU load, and API response times, ensures 
                 the model meets performance requirements and scales as needed.</li>
         </ul>
-
+        <br>
         <h3>2.5.2 Model Maintenance Strategies</h3>
         <p>
             Regular maintenance strategies keep models aligned with evolving data patterns and changing business requirements. Common approaches include:
@@ -402,19 +398,10 @@
         </p>
         <ul>
             <li><strong>MLflow:</strong> MLflow enables tracking metrics, logging experiments, and versioning models, supporting consistent monitoring across models in production.</li>
-            <li><strong>Prometheus and Grafana:</strong> These open-source tools collect and visualize system metrics (e.g., latency, CPU usage), providing real-time monitoring for production infrastructure.</li>
-            <li><strong>Evidently AI:</strong> Evidently AI is an open-source tool that monitors data drift and model performance over time, allowing for quick detection of potential issues in production.</li>
+            <li><strong><a href="https://grafana.com/" target="_blank">Prometheus and Grafana:</a></strong> These open-source tools collect and visualize system metrics (e.g., latency, CPU usage), providing real-time monitoring for production infrastructure.</li>
+            <li><strong><a href="https://www.evidentlyai.com/" target="_blank">Evidently AI:</a></strong> Evidently AI is an open-source tool that monitors data drift and model performance over time, allowing for quick detection of potential issues in production.</li>
         </ul>
 
-        <div class="resource-container-large">
-            <img src="Images/model_monitoring.jpeg" 
-                data-iframe-src="https://www.youtube.com/watch?v=qdo3jH5UmXM" 
-                alt="Model Monitoring Overview" 
-                class="lazy-iframe" 
-                width="100%" height="400" 
-                onclick="loadIframecontainer(this)">
-            <a href="https://www.youtube.com/watch?v=qdo3jH5UmXM" target="_blank">Introduction to Model Monitoring</a>
-        </div>
         <br>
 
         <p>
