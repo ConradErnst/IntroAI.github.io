@@ -1,71 +1,225 @@
-<!--
-https://www.ibm.com/think/insights/agentic-ai
-https://www.youtube.com/watch?v=7vVWFTzOt24
--->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>4. AI Challenges - Intro to AI</title>
+    <title>AI Challenges and Computing Architecture - Intro to AI</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-
-<script src="lazy-load.js"></script>
 <body>
 
 <div class="container">
-    <h1>4. AI Challenges</h1>
+    <h1>AI Challenges and Computing Architecture</h1>
     <a href="index.html" class="back-link">Back to Main Page</a>
 
     <div class="content">
-        <h2 id="ai_challenge">4.0 Overview </h2>
-        <p> 
-            While the current capabilities of AI are impressive, achieving the vision of Artificial General Intelligence (AGI) 
-            will require overcoming several significant challenges. These hurdles span a range of technical, ethical, and conceptual 
-            areas that need to be addressed in order to build more advanced, autonomous systems.
-        </p>
-        <br>
-        <p>
-            
-        </p>
-        <br>
-        <!--
-        <ul>
-            <div class="resources-section">   
-                <div class="resource-item">
-                    <iframe width="100%" height="200" src="https://www.datacamp.com/blog/machine-learning-lifecycle-explained" title="Lifecycle Explained"></iframe>
-                    <a href="https://www.datacamp.com/blog/machine-learning-lifecycle-explained" target="_blank">Lifecycle Explained</a>
-                </div>
-                <div class="resource-item">
-                    <img src="https://img.youtube.com/vi/ZVWg18AXXuE&t=259s/hqdefault.jpg"
-                        data-iframe-src="https://www.youtube.com/embed/ZVWg18AXXuE&t=259s"
-                        alt="Most of the time this process is called MLOps"
-                        class="lazy-iframe" 
-                        width="100%" height="200" 
-                        onclick="loadIframe(this)"
-                    >
-                    <a href="https://www.youtube.com/watch?v=ZVWg18AXXuE&t=259s" target="_blank">Most of the time this process is called MLOps</a>
-                </div>
-            </div>
-        </ul>
-        -->
-        <br>
-        <h2 id="reasoning">4.1 Common Sense and Reasoning</h2>
-        <p>
-           
-        </p>
-        <h2 id="planning">4.2 Strategic Planning and Execution</h2>
-        <br>
-        <h2 id="agent">4.3 Autonomous Agency</h2>
 
-        <h2 id="creativity">4.4 Generative Novelty and Innovation</h2>
-        <h2 id="hardware">4.5 Hardware and Physical Systems</h2>
-        <!--
-        compute - https://www.servethehome.com/inside-100000-nvidia-gpu-xai-colossus-cluster-supermicro-helped-build-for-elon-musk/
-        cu boulder has maybe one of the racks (64 gpu a100)
-        -->
+        <h2 id="overview">1. Overview</h2>
+        <p>
+            The development of Artificial General Intelligence (AGI) faces several significant challenges across technical, ethical, and conceptual domains. Current AI capabilities, while impressive, need to overcome various hurdles to achieve more advanced autonomous systems.
+        </p>
+
+        <h2 id="reasoning">2. Common Sense and Reasoning</h2>
         
-        
-        
+        <h3>2.1 Model Reasoning Architectures</h3>
+        <ul>
+            <li><strong>Transformer-based Reasoning:</strong> Models like GPT use attention mechanisms for contextual processing.</li>
+            <li><strong>Neural-symbolic Integration:</strong> Combines neural networks with symbolic reasoning systems.</li>
+            <li><strong>Probabilistic Reasoning:</strong> Uses Bayesian networks and probabilistic programming.</li>
+        </ul>
+
+        <h3>2.2 Inference Computation</h3>
+        <ul>
+            <li><strong>Real-time Processing:</strong> 
+                <ul>
+                    <li>Optimizing inference latency while maintaining accuracy</li>
+                    <li>Techniques like knowledge distillation and model compression</li>
+                    <li>Trade-offs between model size and reasoning capability</li>
+                </ul>
+            </li>
+            <li><strong>Memory Constraints:</strong> 
+                <ul>
+                    <li>Managing attention mechanism memory requirements</li>
+                    <li>Context window limitations and their impact</li>
+                    <li>Solutions like sliding windows and efficient attention patterns</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>2.3 OpenAI O(1) Model Innovation</h3>
+        <ul>
+            <li><strong>Technical Innovation:</strong>
+                <ul>
+                    <li>Constant-time inference regardless of sequence length</li>
+                    <li>Novel attention mechanism design</li>
+                    <li>Implications for real-world applications</li>
+                </ul>
+            </li>
+            <li><strong>Training Methodology:</strong>
+                <ul>
+                    <li>Specialized architecture for efficient processing</li>
+                    <li>Balance between model capacity and inference speed</li>
+                    <li>Scalability considerations</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2 id="planning">3. Planning and Execution</h2>
+
+        <h3>3.1 Traditional Planning Systems</h3>
+        <ul>
+            <li><strong>STRIPS Planning:</strong> 
+                <ul>
+                    <li>State representation through predicates</li>
+                    <li>Action definitions with preconditions and effects</li>
+                    <li>Goal-directed search through state space</li>
+                </ul>
+            </li>
+            <li><strong>Hierarchical Task Networks (HTN):</strong>
+                <ul>
+                    <li>Decomposition of complex tasks into subtasks</li>
+                    <li>Domain-specific planning strategies</li>
+                    <li>Efficient handling of real-world scenarios</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>3.2 Modern Planning Approaches</h3>
+        <ul>
+            <li><strong>Monte Carlo Tree Search:</strong> 
+                <ul>
+                    <li>Probabilistic planning for large state spaces</li>
+                    <li>Balancing exploration and exploitation</li>
+                    <li>Application in game playing and decision making</li>
+                </ul>
+            </li>
+            <li><strong>Chain of Thought Planning:</strong> 
+                <ul>
+                    <li>Step-by-step reasoning processes</li>
+                    <li>Integration with language models</li>
+                    <li>Enhanced problem-solving capabilities</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2 id="generative">4. Generative Novelty and Innovation</h2>
+
+        <h3>4.1 Understanding AI Creativity</h3>
+        <ul>
+            <li><strong>Pattern Recognition vs. True Innovation:</strong> 
+                <ul>
+                    <li>Statistical pattern learning</li>
+                    <li>Recombination of existing elements</li>
+                    <li>Limitations in conceptual novelty</li>
+                </ul>
+            </li>
+            <li><strong>Creative Process Analysis:</strong> 
+                <ul>
+                    <li>Computational creativity models</li>
+                    <li>Evaluation of creative outputs</li>
+                    <li>Human-AI creativity comparison</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>4.2 Current Generative Approaches</h3>
+        <ul>
+            <li><strong>Neural Generative Models:</strong> 
+                <ul>
+                    <li>Diffusion models for image generation</li>
+                    <li>Language models for text creation</li>
+                    <li>Multi-modal generation systems</li>
+                </ul>
+            </li>
+            <li><strong>Combinatorial Creativity:</strong> 
+                <ul>
+                    <li>Element recombination strategies</li>
+                    <li>Style transfer techniques</li>
+                    <li>Cross-domain synthesis</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2 id="hardware">5. Hardware and Computing Architecture</h2>
+
+        <h3>5.1 Processing Architecture Types</h3>
+        <ul>
+            <li><strong>CPU Architecture:</strong> 
+                <ul>
+                    <li>General-purpose processing</li>
+                    <li>Sequential task optimization</li>
+                    <li>Cache hierarchy and memory management</li>
+                </ul>
+            </li>
+            <li><strong>GPU Architecture:</strong> 
+                <ul>
+                    <li>Parallel processing capabilities</li>
+                    <li>Matrix operation optimization</li>
+                    <li>Memory bandwidth advantages</li>
+                </ul>
+            </li>
+            <li><strong>TPU Design:</strong> 
+                <ul>
+                    <li>AI-specific optimizations</li>
+                    <li>Tensor processing efficiency</li>
+                    <li>Systolic array architecture</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>5.2 Computing Infrastructure</h3>
+        <ul>
+            <li><strong>Data Centers:</strong> 
+                <ul>
+                    <li>Power and cooling requirements</li>
+                    <li>Network architecture</li>
+                    <li>Distributed computing systems</li>
+                </ul>
+            </li>
+            <li><strong>Compute Scaling:</strong> 
+                <ul>
+                    <li>Horizontal vs vertical scaling</li>
+                    <li>Resource allocation strategies</li>
+                    <li>Performance optimization techniques</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>5.3 Emerging Computing Paradigms</h3>
+        <ul>
+            <li><strong>Neuromorphic Computing:</strong> 
+                <ul>
+                    <li>Brain-inspired architectures</li>
+                    <li>Spiking neural networks</li>
+                    <li>Energy efficiency advantages</li>
+                </ul>
+            </li>
+            <li><strong>Quantum Computing:</strong> 
+                <ul>
+                    <li>Quantum bits and superposition</li>
+                    <li>Quantum algorithms</li>
+                    <li>Error correction challenges</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2 id="future-directions">6. Future Directions</h2>
+        <ul>
+            <li>Enhanced semantic understanding</li>
+            <li>Cross-domain innovation capabilities</li>
+            <li>Improved human-AI collaboration</li>
+            <li>Sustainable computing solutions</li>
+            <li>Integration of hybrid systems</li>
+            <li>Edge computing optimization</li>
+        </ul>
+
+    </div>
+</div>
+
+<div class="footer">
+    <p>&copy; 2024 Intro to AI. All Rights Reserved.</p>
+</div>
+
+</body>
+</html>
