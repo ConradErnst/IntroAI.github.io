@@ -409,8 +409,67 @@
             Monitoring and maintenance are essential for long-term model reliability, enabling timely updates, performance tracking, and resource management. 
             With the right tools and strategies, organizations can maximize the effectiveness of their machine learning models in dynamic environments.
         </p>
-    </div>
-</div>
+        <br>
+        <h2 id="industry_lifecycle">2.6 Industry Lifecycle</h2>
+        
+        <p>The development and deployment of large language models (LLMs) follows a complex lifecycle that combines traditional software development practices with unique AI-specific considerations. Here's a detailed breakdown of the key stages, supported by published sources:</p>
+        <br>
+        <h3>Data Collection and Preparation</h3>
+        <ul>
+            <li><strong>Web Crawling</strong>: Companies utilize large-scale web crawling to gather training data. For example, <strong><a href="https://commoncrawl.org/" target="_blank">CommonCrawl</a></strong>, which is used by many AI companies, processes petabytes of web data monthly these companies also instanciate their inhouse crawlers.</li>
+            <li><strong>Data Processing</strong>: Raw data undergoes extensive cleaning, filtering, and preprocessing. <strong><a href="https://arxiv.org/abs/2005.14165" target="_blank">OpenAI's GPT-3 paper</a></strong> details their data cleaning pipeline, which includes deduplication, quality filtering, and content filtering.</li>
+        </ul>
+        <br>
+        <h3>Model Development</h3>
+        <ul>
+            <li><strong>Architecture Design</strong>: Companies design model architectures based on research breakthroughs. For instance, <strong><a href="https://arxiv.org/abs/2310.07019" target="_blank">Anthropic's Constitutional AI</a></strong> approach demonstrates how safety considerations influence architecture decisions.</li>
+            <li><strong>Training Infrastructure</strong>: Training requires massive computational resources. For example:</li>
+        </ul>
+        
+        <blockquote>
+            <p>"Practical large-scale pre-training requires large amounts of computation, which is energy-intensive: training the GPT-3 175B consumed several thousand petaflop/s-days of compute during pre-training, compared to tens of petaflop/s-days for a 1.5B parameter GPT-2 model"</p>
+        </blockquote>
+        
+        <p>Some quick comparisons time to train amount of GPU's:</p>
+        <ul>
+            <li>288 years - 1 GPUs</li>
+            <li>36 years - 8 GPUs</li>
+            <li>7 months - 512 GPUs</li>
+            <li>34 days - 1024 GPUs (This is what it was for GPT3 to be pretrained)</li>
+        </ul>
+        
+        <p>Source: <strong><a href="https://arxiv.org/pdf/2104.04473" target="_blank">Training Compute Requirements Paper</a></strong></p>
+        
+        <h3>Testing and Validation</h3>
+        <ul>
+            <li><strong>Technical Evaluation</strong>: Models undergo extensive testing across standard benchmarks like <strong><a href="https://arxiv.org/abs/2009.03300" target="_blank">MMLU</a></strong>, TruthfulQA, and others.</li>
+            <li><strong>Safety Testing</strong>: Companies implement various safety measures:
+                <ul>
+                    <li>Anthropic's approach includes an agreement with the US and UK safety institute and tests CRBN</li>
+                    <li>Source: <strong><a href="https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.800-1.ipd.pdf" target="_blank">NIST AI Safety Guidelines</a></strong></li>
+                    <li>Model outputs are tested against known safety concerns and biases</li>
+                </ul>
+            </li>
+        </ul>
+        
+        <h3>Deployment and Monitoring</h3>
+        <ul>
+            <li><strong>API Development</strong>: Models are deployed through APIs with various safety measures:
+                <ul>
+                    <li>Rate limiting</li>
+                    <li>Content filtering</li>
+                    <li>Usage monitoring</li>
+                </ul>
+            </li>
+            <li><strong>Continuous Improvement</strong>: Models are regularly updated based on:
+                <ul>
+                    <li>Safety monitoring</li>
+                    <li>Performance metrics</li>
+                </ul>
+            </li>
+            <li><strong>Model Pinning</strong>: Some companies provide model pinning that specify a specific model without updates</li>
+        </ul>
+
 
 <div class="footer">
 <p>&copy; 2024 Intro to AI.</p>
