@@ -505,8 +505,6 @@
         </ul>
         <br>
 
-
-
         <br>
         <h3>1.3.3 Semi-Supervised Learning</h3>
         
@@ -515,43 +513,103 @@
             and a larger amount of unlabeled data. This approach combines elements of supervised and unsupervised learning, 
             leveraging the labeled data to guide the model in making predictions while learning from the structure within the unlabeled data.
         </p>
-        <!--
         <br>
+        <h4>Self-Training</h4>
         <ul>
+            <li>Self-training is one of the simplest and most intuitive semi-supervised learning methods. <a href="https://machinelearningmastery.com/self-training-and-self-labeled-techniques-for-semi-supervised-learning/" target="_blank">Detailed Overview</a></li>
+            
             <div class="resources-section">
                 <div class="resource-item">
-                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/irPD9_irRVg" title="Semi-Supervised Learning Overview"></iframe>
-                    <a href="https://www.youtube.com/watch?v=irPD9_irRVg" target="_blank">Introduction to Semi-Supervised Learning</a>
+                    <img src="https://img.youtube.com/vi/b034xj1h6oI/hqdefault.jpg"
+                        data-iframe-src="https://www.youtube.com/embed/b034xj1h6oI"
+                        alt="Self-Training Explanation"
+                        class="lazy-iframe" 
+                        width="100%" height="200" 
+                        onclick="loadIframe(this)"
+                    >
+                    <a href="https://www.youtube.com/watch?v=b034xj1h6oI" target="_blank">Self-Training Explanation</a>
                 </div>
                 <div class="resource-item">
-                    <iframe width="100%" height="200" src="https://www.altexsoft.com/blog/semi-supervised-learning/" title="General Overview"></iframe>
-                    <a href="https://www.altexsoft.com/blog/semi-supervised-learning/" target="_blank">General Overview</a>
+                    <img src="https://img.youtube.com/vi/txGZ28FgYE4/hqdefault.jpg"
+                        data-iframe-src="https://www.youtube.com/embed/txGZ28FgYE4"
+                        alt="Practical Implementation"
+                        class="lazy-iframe" 
+                        width="100%" height="200" 
+                        onclick="loadIframe(this)"
+                    >
+                    <a href="https://www.youtube.com/watch?v=txGZ28FgYE4" target="_blank">Practical Implementation</a>
                 </div>
             </div>
         </ul>
+
+        <br>
+        <h4>Co-Training</h4>
+        <p>
+            Co-training uses multiple views of the data to train separate models that teach each other. Each model makes predictions
+            on unlabeled data, and their most confident predictions are used to create additional training data for the other models.
+            This approach works particularly well when the different views of the data provide complementary information.
+        </p>
+        <ul>
+            <li><a href="https://www.cs.cmu.edu/~avrim/Papers/cotrain.pdf" target="_blank">Original Co-Training Paper</a></li>
+            
+            <div class="resources-section">
+                <div class="resource-item">
+                    <img src="https://img.youtube.com/vi/UZLkBsYHVXg/hqdefault.jpg"
+                        data-iframe-src="https://www.youtube.com/embed/UZLkBsYHVXg"
+                        alt="Co-Training Overview"
+                        class="lazy-iframe" 
+                        width="100%" height="200" 
+                        onclick="loadIframe(this)"
+                    >
+                    <a href="https://www.youtube.com/watch?v=UZLkBsYHVXg" target="_blank">Co-Training Overview</a>
+                </div>
+                <div class="resource-item">
+                    <img src="https://img.youtube.com/vi/yLXrHNlz_tA/hqdefault.jpg"
+                        data-iframe-src="https://www.youtube.com/embed/yLXrHNlz_tA"
+                        alt="Applications and Examples"
+                        class="lazy-iframe" 
+                        width="100%" height="200" 
+                        onclick="loadIframe(this)"
+                    >
+                    <a href="https://www.youtube.com/watch?v=yLXrHNlz_tA" target="_blank">Applications and Examples</a>
+                </div>
+            </div>
+        </ul>
+
         <br>
         <h4>Generative Models</h4>
         <p>
-            Generative models in semi-supervised learning, like Variational Autoencoders (VAEs) or Generative Adversarial Networks (GANs), 
-            learn a representation of the data distribution. These models use both labeled and unlabeled data to improve 
-            the generation and classification of data, useful for scenarios with limited labeled data.
+            Generative models in semi-supervised learning learn the underlying <bold>distribution of the data</bold>, allowing them to
+            generate new samples and better understand the structure of unlabeled data. These models can use this understanding
+            to improve their performance on the labeled portion of the dataset.
         </p>
-        
         <ul>
-            <li><a href="https://towardsdatascience.com/semi-supervised-learning-with-variational-autoencoders-a01c3f902429" target="_blank">VAE-based Semi-Supervised Learning</a></li>
+            <li><a href="https://arxiv.org/abs/2006.10029" target="_blank">Recent Advances in Deep Generative Models</a></li>
+            
             <div class="resources-section">
                 <div class="resource-item">
-                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/FWfLOyMEQLw" title="Generative Models in Semi-Supervised Learning"></iframe>
-                    <a href="https://www.youtube.com/watch?v=FWfLOyMEQLw" target="_blank">Introduction to Semi-Supervised VAEs</a>
+                    <img src="https://img.youtube.com/vi/5WoItGTWV54/hqdefault.jpg"
+                        data-iframe-src="https://www.youtube.com/embed/5WoItGTWV54"
+                        alt="Generative Models Explained"
+                        class="lazy-iframe" 
+                        width="100%" height="200" 
+                        onclick="loadIframe(this)"
+                    >
+                    <a href="https://www.youtube.com/watch?v=5WoItGTWV54" target="_blank">Generative Models Explained</a>
+                </div>
+                <div class="resource-item">
+                    <img src="https://img.youtube.com/vi/HGYYEUSm-0Q/hqdefault.jpg"
+                        data-iframe-src="https://www.youtube.com/embed/HGYYEUSm-0Q"
+                        alt="Real-world Applications"
+                        class="lazy-iframe" 
+                        width="100%" height="200" 
+                        onclick="loadIframe(this)"
+                    >
+                    <a href="https://www.youtube.com/watch?v=HGYYEUSm-0Q" target="_blank">Real-world Applications</a>
                 </div>
             </div>
         </ul>
-        <div class="resource-container">
-            <iframe width="100%" height="200" src="https://www.youtube.com/embed/d3U0_vxTzrA" title="Semi-Supervised Learning Overview"></iframe>
-            <a href="https://www.youtube.com/watch?v=d3U0_vxTzrA" target="_blank">Introduction to Semi-Supervised Learning</a>
-        </div>
         <br>
-
         <h4>Graph-Based Methods</h4>
         <p>
             Graph-based methods utilize the structure within data points, representing them as nodes in a graph 
@@ -567,46 +625,6 @@
                 </div>
             </div>
         </ul>
-        <br>
-
-        <h4>Self-Training</h4>
-        <p>
-            Self-training is a semi-supervised technique where a model is initially trained on the labeled data. It then makes predictions on 
-            the unlabeled data and retrains using these confident predictions. This iterative process uses the model’s own predictions 
-            to gradually expand the labeled dataset.
-        </p>
-        <ul>
-            <li><a href="https://www.datacamp.com/community/tutorials/self-training-semi-supervised-learning" target="_blank">In-depth Overview</a></li>
-            <div class="resources-section">
-                <div class="resource-item">
-                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/2OnFGyJadGM" title="Self-Training Example"></iframe>
-                    <a href="https://www.youtube.com/watch?v=2OnFGyJadGM" target="_blank">Self-Training in Action</a>
-                </div>
-            </div>
-        </ul>
-        <br>
-
-        <h4>Co-Training</h4>
-        <p>
-            Co-training is a method where two or more models are trained simultaneously on different subsets of features 
-            from the labeled data. Each model makes predictions on the unlabeled data, and the confident predictions 
-            are shared and added to the labeled data for further training, enhancing performance.
-        </p>
-        <ul>
-            <li><a href="https://ai.stanford.edu/~ang/papers/acl98-co-training.pdf" target="_blank">Original Co-Training Paper</a></li>
-            <div class="resources-section">
-                <div class="resource-item">
-                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/WQehaoh3tD8" title="Understanding Co-Training"></iframe>
-                    <a href="https://www.youtube.com/watch?v=WQehaoh3tD8" target="_blank">Co-Training Explained</a>
-                </div>
-            </div>
-        </ul>
-    -->
-
-        
-
-        
-        
         <br>
         <h3>1.3.4 Reinforcement Learning (RL)</h3>
         <p>
